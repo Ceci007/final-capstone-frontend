@@ -8,7 +8,7 @@ class Signup extends React.Component {
     this.state = {
       username: '',
       password: '',
-      password_confirmation: '',
+      passwordConfirmation: '',
       errors: '',
     };
     this.handleChangeName = this.handleChangeName.bind(this);
@@ -30,18 +30,18 @@ class Signup extends React.Component {
 
   handleChangePasswordConfirm(e) {
     this.setState({
-      password_confirmation: e.target.value,
+      passwordConfirmation: e.target.value,
     });
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    const { username, password, password_confirmation } = this.state;
+    const { username, password, passwordConfirmation } = this.state;
     const { handleLogin } = this.props;
     const user = {
       username,
       password,
-      password_confirmation,
+      passwordConfirmation,
     };
 
     axios.post('http://localhost:3001/users', { user }, { withCredentials: true })
@@ -58,11 +58,6 @@ class Signup extends React.Component {
       .catch(error => console.log('api errors:', error));
   }
 
-  redirect() {
-    const { history } = this.props;
-    if (history) history.push('/');
-  }
-
   handleErrors() {
     const { errors } = this.state;
     return (
@@ -74,9 +69,14 @@ class Signup extends React.Component {
     );
   }
 
+  redirect() {
+    const { history } = this.props;
+    if (history) history.push('/');
+  }
+
   render() {
     const {
-      username, password, password_confirmation, errors,
+      username, password, passwordConfirmation, errors,
     } = this.state;
     return (
       <div>
@@ -99,9 +99,9 @@ class Signup extends React.Component {
           <input
             placeholder="password confirmation"
             type="password"
-            name="password_confirmation"
+            name="passwordConfirmation"
             // eslint-disable-next-line camelcase
-            value={password_confirmation}
+            value={passwordConfirmation}
             onChange={this.handleChangePasswordConfirm}
           />
           <button placeholder="submit" type="submit">

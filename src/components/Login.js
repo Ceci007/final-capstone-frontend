@@ -53,11 +53,6 @@ class Login extends React.Component {
       .catch(error => console.log('api errors:', error));
   }
 
-  redirect() {
-    const { history } = this.props;
-    if (history) history.push('/');
-  }
-
   handleErrors() {
     const { errors } = this.state;
     return (
@@ -67,6 +62,11 @@ class Login extends React.Component {
         </ul>
       </div>
     );
+  }
+
+  redirect() {
+    const { history } = this.props;
+    if (history) history.push('/');
   }
 
   render() {

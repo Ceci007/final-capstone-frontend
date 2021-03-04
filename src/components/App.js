@@ -26,19 +26,6 @@ class App extends React.Component {
     this.logInStatus;
   }
 
-  logInStatus() {
-    axios.get('http://localhost:3001/logged_in',
-      { withCredentials: true })
-      .then(response => {
-        if (response.data.logged_in) {
-          this.handleLogIn(response);
-        } else {
-          this.handleLogOut();
-        }
-      })
-      .catch(error => console.log('api errors:', error));
-  }
-
   handleLogIn(data) {
     console.log(data);
     this.setState({
@@ -52,6 +39,19 @@ class App extends React.Component {
       isLoggedIn: false,
       user: {},
     });
+  }
+
+  logInStatus() {
+    axios.get('http://localhost:3001/logged_in',
+      { withCredentials: true })
+      .then(response => {
+        if (response.data.logged_in) {
+          this.handleLogIn(response);
+        } else {
+          this.handleLogOut();
+        }
+      })
+      .catch(error => console.log('api errors:', error));
   }
 
   render() {
