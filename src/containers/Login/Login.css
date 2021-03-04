@@ -1,0 +1,84 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+.body {
+  background-color: #f7f8f9;
+}
+
+.login {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login form p {
+  margin: 6px 0;
+}
+
+.login form input {
+  margin: 10px 0;
+  height: 28px;
+  width: 195px;
+}
+
+.login form input::placeholder {
+  padding: 0 10px;
+}
+
+.login form button a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-login {
+  border: none;
+  background-color: rgb(173, 220, 145);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 110px;
+  cursor: pointer;
+}
+
+.btn-signup {
+  width: 110px;
+  height: 40px;
+  padding: 3px 2px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #62b5e5;
+  border: none;
+  cursor: pointer;
+}
+
+.errors-div {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.errors-div ul {
+  margin: 0;
+  padding: 5px 31px;
+}
