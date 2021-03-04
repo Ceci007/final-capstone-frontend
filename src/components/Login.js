@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
+import PropTypes from 'prop-types';
 
 class Login extends React.Component {
   constructor(props) {
@@ -10,22 +12,65 @@ class Login extends React.Component {
       password: '',
       errors: '',
     };
+    this.handleChangeName = this.handleChangeName.bind(this);
+    this.handleChangePassword = this.handleChangePassword.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(e) {
-    const { name, value } = e.target;
+  handleChangeName(e) {
     this.setState({
-      [name]: value,
+      username: e.target.value,
     });
   }
 
-  // eslint-disable-next-line class-methods-use-this
+  handleChangePassword(e) {
+    this.setState({
+      password: e.target.value,
+    });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
+    const { username, password } = this.state;
+    const { handleLogin } = this.props;
+
+    const user = {
+      username,
+      password,
+    };
+
+    axios.post('http://localhost:3001/login', { user }, { withCredentials: true })
+      .then(response => {
+        if (response.data.logged_in) {
+          handleLogin(response.data);
+          this.redirect();
+        } else {
+          this.setState({
+            errors: response.data.errors,
+          });
+        }
+      })
+      .catch(error => console.log('api errors:', error));
+  }
+
+  redirect() {
+    const { history } = this.props;
+    if (history) history.push('/');
+  }
+
+  handleErrors() {
+    const { errors } = this.state;
+    return (
+      <div>
+        <ul>
+          {errors.map(error => <li key={error}>{error}</li>)}
+        </ul>
+      </div>
+    );
   }
 
   render() {
-    const { username, password } = this.state;
+    const { username, password, errors } = this.state;
     return (
       <div>
         <h1>Log In</h1>
@@ -35,14 +80,14 @@ class Login extends React.Component {
             type="text"
             name="username"
             value={username}
-            onChange={this.handleChange}
+            onChange={this.handleChangeName}
           />
           <input
             placeholder="password"
             type="password"
             name="password"
             value={password}
-            onChange={this.handleChange}
+            onChange={this.handleChangePassword}
           />
           <button placeholder="submit" type="submit">
             Log In
@@ -54,8 +99,23 @@ class Login extends React.Component {
           </div>
 
         </form>
+        <div>
+          { errors ? this.handleErrors() : null }
+        </div>
       </div>
     );
   }
 }
-export default Login;
+
+Login.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func,
+  }),
+  handleLogin: PropTypes.func.isRequired,
+};
+
+Login.defaultProps = {
+  history: {},
+};
+
+export default withRouter(Login);
