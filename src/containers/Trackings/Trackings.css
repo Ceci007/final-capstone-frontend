@@ -1,0 +1,146 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+.trackings {
+  font-family: 'Roboto', sans-serif;
+}
+
+.trackings h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 5.5vw;
+  margin: 10px;
+}
+
+.trackings-buttons {
+  display: flex;
+  align-items: center;
+  top: 3px;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.add-day,
+.go-back {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.add-day {
+  font-size: 12vw;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.go-back {
+  font-size: 6.8vw;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.go-back a {
+  color: white;
+}
+
+.more {
+  border-radius: 0 0 12px 12px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date p {
+  font-size: 4vw;
+  margin: 7px 0 0 13px;
+}
+
+.date p i {
+  padding-right: 5px;
+}
+
+.date div button {
+  border: none;
+  background: none;
+  font-size: 5.5vw;
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+.mood,
+.temp {
+  font-size: 3.7vw;
+  display: flex;
+  align-items: center;
+}
+
+.mood p {
+  margin: 8px 0 5px 0;
+  padding-left: 6px;
+}
+
+.temp p {
+  margin-top: 5px;
+  padding-right: 8px;
+}
+
+.mood p:first-child {
+  padding-left: 29px;
+}
+
+.mood p:last-child {
+  font-size: 4.5vw;
+}
+
+.mood p i {
+  padding: 0 5px;
+}
+
+.temp p i {
+  padding-right: 5px;
+}
+
+.temp p:first-child {
+  padding-left: 28px;
+}
+
+.medicines,
+.symptons {
+  display: flex;
+  list-style: none;
+}
+
+.med-list {
+  margin-left: 15px;
+}
+
+.symp-list {
+  margin-left: 35px;
+}
+
+.med-list li,
+.symp-list li {
+  margin: 5px;
+}
+
+.med-list li span {
+  padding-right: 8px;
+  color: #62b5e5;
+}
+
+.symp-list li::before {
+  content: '\f0fa';
+  /* stylelint-disable */
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: rgb(173, 220, 145);
+}
