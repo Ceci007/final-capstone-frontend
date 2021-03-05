@@ -1,0 +1,120 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+.day {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid gray;
+  background-color: white;
+  margin: 0 15px 12px 15px;
+  border-radius: 11px;
+  flex-direction: column;
+  font-size: 3.5vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.day input {
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 3.2vw;
+}
+
+.date-temp {
+  display: flex;
+  margin: 8px 0 8px 7px;
+  justify-content: center;
+}
+
+.date-div,
+.temp-div {
+  display: flex;
+  align-items: center;
+}
+
+.date-div {
+  margin-right: 8px;
+}
+
+.date-div input,
+.temp-div input {
+  width: 32vw;
+  font-size: 3.2vw;
+  font-family: 'Roboto', sans-serif;
+  padding: 6px;
+}
+
+.temp-div input {
+  width: 9vw;
+}
+
+.mood-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.mood-div span {
+  font-size: 5vw;
+}
+
+.mood-div span:first-child {
+  font-size: 4vw;
+}
+
+.medicines2,
+.symptons2 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.medicines2 p,
+.symptons2 p {
+  width: 22vw;
+  text-align: center;
+}
+
+.medicine2 div,
+.symptons2 div {
+  display: flex;
+  flex-direction: column;
+}
+
+.med-div {
+  width: 50%;
+}
+
+.med-div input,
+.symp-div input {
+  margin: 0.3vh 0;
+  width: 40vw;
+  padding: 6px;
+}
+
+.med-div input::placeholder,
+.symp-div input::placeholder {
+  padding-left: 5px;
+}
+
+.day-buttons {
+  justify-content: center;
+}
+
+.day-buttons button {
+  font-size: 3.5vw;
+  width: 23vw;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  cursor: pointer;
+}
