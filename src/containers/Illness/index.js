@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import FormIllness from '../../components/FormIllness';
+import FormIllness from '../../components/FormIllness/FormIllness';
 import {
   fetchUserIllness, createIll, deleteIll,
 } from '../../actions/illness';

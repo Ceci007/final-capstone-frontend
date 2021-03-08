@@ -22,7 +22,7 @@ export const createIll = data => async dispatch => {
   try {
     const response = await axios({
       method: 'POST',
-      url: `https://tracking-api-ceci.herokuapp.com/users/${data.user_id}/illnesses`,
+      url: `https://tracking-api-ceci.herokuapp.com/users/${data.userId}/illnesses`,
       data,
       crossdomain: true,
       withCredentials: true,
@@ -45,7 +45,7 @@ export const deleteIll = data => async dispatch => {
     dispatch({ type: DELETE_ILLNESS, payload: data });
     const response = await axios({
       method: 'DELETE',
-      url: `https://tracking-api-ceci.herokuapp.com/users/${data.user_id}/illnesses/${data.id}`,
+      url: `https://tracking-api-ceci.herokuapp.com/users/${data.userId}/illnesses/${data.id}`,
       data,
       crossdomain: true,
       withCredentials: true,
@@ -61,7 +61,7 @@ export const updateIll = data => async dispatch => {
     dispatch({ type: UPDATE_ILLNESS, payload: data });
     const response = await axios({
       method: 'PATCH',
-      url: `https://tracking-api-ceci.herokuapp.com/users/${data.user_id}/illnesses/${data.id}`,
+      url: `https://tracking-api-ceci.herokuapp.com/users/${data.userId}/illnesses/${data.id}`,
       data,
       crossdomain: true,
       withCredentials: true,

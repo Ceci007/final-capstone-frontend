@@ -106,7 +106,7 @@ class FormDay extends React.Component {
           {' '}
           Tracking for Illness
         </h3>
-        <form className="day">
+        <form className="day" onSubmit={() => this.handleSubmit}>
 
           <div className="form-div">
             <div className="date-temp">

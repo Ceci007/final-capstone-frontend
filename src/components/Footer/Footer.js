@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 import './Footer.css';
-import PathComponent from '../PathComponent';
+import PathComponent from '../PathComponent/PathComponent';
 import { logOutUser } from '../../actions/user';
 
 const Footer = ({

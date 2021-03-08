@@ -7,12 +7,12 @@ import {
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import gandalf from './img/gandalf.png';
-import Header from '../Header';
+import Header from '../Header/Header';
 import Login from '../../containers/Login';
 import Signup from '../../containers/Signup';
 import Illness from '../../containers/Illness';
 import Trackings from '../../containers/Trackings';
-import Footer from '../Footer';
+import Footer from '../Footer/Footer';
 import { loginStatus } from '../../actions/user';
 import './App.css';
 

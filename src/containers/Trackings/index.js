@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import { fetchIllnessDays, createDay, deleteDay } from '../../actions/trackings';
 import { loginStatus } from '../../actions/user';
-import FormDay from '../../components/FormDay';
+import FormDay from '../../components/FormDay/FormDay';
 import './Trackings.css';
 
 class Trackings extends React.Component {
