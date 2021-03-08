@@ -18,6 +18,7 @@ The objective of this project was to create a tracking App in which a user is pr
 
 Live demo of the project: [Live Demo]()
 
+![Traking Screenshot](./track.it_screenshot.png)
 
 <!-- THE APP -->
 ## illnest
