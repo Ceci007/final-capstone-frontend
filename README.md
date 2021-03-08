@@ -45,7 +45,7 @@ You can always use the [Live Demo]() or install it locally using these steps:
 
 #### Clone my repository
 
-``` git clone https://github.com/Ceci007/final-capstone-frontend.git```
+``` git clone https://github.com/Ceci007/final-capstone-frontend.git ```
 
 #### Go to my project's folder
 
@@ -81,7 +81,7 @@ You can always use the [Live Demo]() or install it locally using these steps:
 <!-- POTENTIAL FEATURES -->
 ## Potential features
 
-* Create a tablet and mobile view.
+* Create a tablet and mobile views for all screens.
 * Create data charts for measuring progress.
 * Use React Hooks.
 * Include more tests
