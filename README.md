@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+## Final Capstone Front-End Project: Tracking app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+* [About the Project](#about-the-project)
+* [Illnest](#illnest)
+* [Installation](#installation)
+* [Technologies used](#technologies-used)
+* [Author](#author)
+* [Potential future features](#potential-features)
+* [Show your Support](#show-your-support)
+* [Acknowledgments](#acknowledgments)
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `yarn start`
+The objective of this project was to create a tracking App in which a user is presented with a list of things to be measured. In this health care app we track the information from an api consumed with react and redux.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Live demo of the project: [Live Demo]()
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+<!-- THE APP -->
+## illnest
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+On illnest, you can track a specific illness you have, whether is chronic or is a recent affliction, it can be measure here. 
 
-### `yarn build`
+On the Login page, you write your username and password. If you are not registered, you can go to Signup and fill the form with your data. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then on the main page, you have all the illnesses/afflictions you want to monitor. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you click on a specific one, you are redirected to all the trackings you have registered previously. Some of the data included in this section are:
+- Date of the Tracking
+- The mood of the date
+- Temperature
+- Medicines
+- Symptoms
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can always delete/add new illnesses and trackings.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- INSTALLATION -->
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can always use the [Live Demo]() or install it locally using these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Clone my repository
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+``` git clone https://github.com/Ceci007/final-capstone-frontend.git```
 
-## Learn More
+#### Go to my project's folder
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+``` cd final-capstone-frontend ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Get the dependencies needed
 
-### Code Splitting
+``` npm install ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Open the project
+``` npm run start ```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- TECHNOLOGIES USED -->
+## Technologies used
 
-### Making a Progressive Web App
+* React
+* Redux
+* Javascript
+* Eslint
+* Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!--AUTHOR -->
+## Author
+👤 ***Cecilia Benitez***
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Github: [@Ceci007](https://github.com/Ceci007)
+- Twitter: [@CeciDeveloper](https://twitter.com/CeciDeveloper)
+- Linkedin: [LinkedIn](https://www.linkedin.com/in/cecilia-benítez)
+- Portfolio: [cecibenitez.com](https://www.cecibenitez.com/)
 
-### Deployment
+<!-- POTENTIAL FEATURES -->
+## Potential features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Create a tablet and mobile view.
+* Create data charts for measuring progress.
+* Use React Hooks.
+* Include more tests
 
-### `yarn build` fails to minify
+<!-- SHOW YOUR SUPPORT -->
+## Show your Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a star if you like this project!
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgments
+
+* [Microverse](https://www.microverse.org/)
