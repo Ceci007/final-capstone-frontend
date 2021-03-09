@@ -16,7 +16,7 @@
 
 The objective of this project was to create a tracking App in which a user is presented with a list of things to be measured. In this health care app we track the information from an api consumed with react and redux.
 
-Live demo of the project: [Live Demo]()
+Live demo of the project: [Live Demo](https://vigorous-pike-400a13.netlify.app/)
 
 ![Traking Screenshot](./track.it_screenshot.png)
 
@@ -42,7 +42,7 @@ You can always delete/add new illnesses and trackings.
 <!-- INSTALLATION -->
 ### Installation
 
-You can always use the [Live Demo]() or install it locally using these steps:
+You can always use the [Live Demo](https://vigorous-pike-400a13.netlify.app/) or install it locally using these steps:
 
 #### Clone my repository
 
