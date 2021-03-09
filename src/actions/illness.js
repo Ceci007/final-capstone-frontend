@@ -58,6 +58,7 @@ export const deleteIll = data => async dispatch => {
 
 export const updateIll = data => async dispatch => {
   try {
+    console.log(data);
     dispatch({ type: UPDATE_ILLNESS, payload: data });
     const response = await axios({
       method: 'PATCH',

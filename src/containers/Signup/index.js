@@ -55,7 +55,7 @@ class Signup extends Component {
 
    handleErrors = () => {
      const { errors } = this.state;
-     setTimeout(() => this.setState({ errors: '' }), 3000);
+     // setTimeout(() => this.setState({ errors: '' }), 3000);
      return (
        <ul>
          {errors.map(error => <li key={error}>{error}</li>)}

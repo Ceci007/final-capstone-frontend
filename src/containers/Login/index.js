@@ -52,7 +52,7 @@ class Login extends React.Component {
 
   handleErrors = () => {
     const { errors } = this.state;
-    setTimeout(() => this.setState({ errors: '' }), 3000);
+    // setTimeout(() => this.setState({ errors: '' }), 3000);
     if (errors.length > 0) {
       return (
         <div>

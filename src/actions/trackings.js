@@ -6,7 +6,7 @@ export const DELETE_DAY = 'DELETE DAY';
 export const CREATE_DAY_ERROR = 'CREATE DAY ERROR';
 export const UPDATE_DAY = 'UPDATE DAY';
 
-export const fetchIllnessDays = (userid, illnessid) => dispatch => axios.get(`https://tracking-api-ceci.herokuapp.com/users/${userid}/illnesses/${illnessid}/trackings`)
+export const fetchIllnessDays = (userId, illnessId) => dispatch => axios.get(`https://tracking-api-ceci.herokuapp.com/users/${userId}/illnesses/${illnessId}/trackings`)
   .then(response => response.data)
   .then(data => {
     dispatch({
@@ -22,7 +22,7 @@ export const createDay = data => async dispatch => {
   try {
     const response = await axios({
       method: 'POST',
-      url: `https://tracking-api-ceci.herokuapp.com/users/${data.user_id}/illnesses/${data.illness_id}/trackings `,
+      url: `https://tracking-api-ceci.herokuapp.com/users/${data.userId}/illnesses/${data.illnessId}/trackings `,
       data,
       crossdomain: true,
       withCredentials: true,
@@ -45,7 +45,7 @@ export const deleteDay = data => async dispatch => {
     dispatch({ type: DELETE_DAY, payload: data });
     const response = await axios({
       method: 'DELETE',
-      url: `https://tracking-api-ceci.herokuapp.com/users/${data.user_id}/illnesses/${data.illness_id}/trackings/${data.id}`,
+      url: `https://tracking-api-ceci.herokuapp.com/users/${data.userId}/illnesses/${data.illnessId}/trackings/${data.id}`,
       data,
       crossdomain: true,
       withCredentials: true,
@@ -61,7 +61,7 @@ export const updateDay = data => async dispatch => {
     dispatch({ type: UPDATE_DAY, payload: data });
     const response = await axios({
       method: 'PATCH',
-      url: `https://tracking-api-ceci.herokuapp.com/users/${data.user_id}/illnesses/${data.illness_id}/trackings/${data.id}`,
+      url: `https://tracking-api-ceci.herokuapp.com/users/${data.userId}/illnesses/${data.illnessId}/trackings/${data.id}`,
       data,
       crossdomain: true,
       withCredentials: true,

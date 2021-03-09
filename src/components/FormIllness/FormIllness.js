@@ -50,7 +50,7 @@ class FormIllness extends React.Component {
 
     const data = {
       id,
-      user_id: user.user.id,
+      userId: user.user.id,
       name,
       description,
     };
