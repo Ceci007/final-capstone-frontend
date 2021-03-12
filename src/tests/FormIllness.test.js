@@ -3,13 +3,13 @@ import { Provider } from 'react-redux';
 import { create } from 'react-test-renderer';
 import { createStore, applyMiddleware } from 'redux';
 import combinedReducers from '../reducers';
-import FormDay from '../components/FormDay/FormDay';
+import FormIllness from '../components/FormIllness/FormIllness';
 
-test('FormDay renders correctly', () => {
+test('FormIllness renders correctly', () => {
   const store = createStore(combinedReducers, applyMiddleware(thunk));
   const tree = create(
     <Provider store={store}>
-      <FormDay />
+      <FormIllness />
     </Provider>,
   ).toJSON();
   expect(tree).toMatchSnapshot();

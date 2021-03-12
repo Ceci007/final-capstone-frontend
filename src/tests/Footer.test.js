@@ -1,5 +1,5 @@
 import thunk from 'redux-thunk';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
 import { create } from 'react-test-renderer';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -13,7 +13,7 @@ test('Footer renders correctly', () => {
       <BrowserRouter>
         <Footer />
       </BrowserRouter>
-    </Provider>
+    </Provider>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
