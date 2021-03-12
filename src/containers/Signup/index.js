@@ -99,7 +99,7 @@ class Signup extends Component {
              required
            />
            <button placeholder="submit" type="submit">
-             Sign In
+             Sign Up
            </button>
          </form>
        </section>
