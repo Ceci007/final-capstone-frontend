@@ -1,0 +1,109 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+.main {
+  padding-bottom: 10vh;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: scroll;
+}
+
+.main h3 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 4.5vw;
+}
+
+.add-ill {
+  font-size: 11vw;
+  color: white;
+  position: absolute;
+  right: 11px;
+  top: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.illnesses {
+  margin-top: 12px;
+}
+
+.one-ill {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid rgb(218, 213, 213);
+  background-color: white;
+  margin: 0 15px 12px 15px;
+  border-radius: 11px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-ill .buttons {
+  align-self: flex-end;
+  margin-top: 4px;
+}
+
+.one-ill .buttons button {
+  border: none;
+  background: none;
+  font-size: 5vw;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.fa-trash-o {
+  color: red;
+}
+
+.fa-pencil-square-o {
+  color: black;
+}
+
+.one-ill:hover {
+  background-color: rgb(207, 240, 187, 0.7);
+}
+
+.one-ill .ill-info {
+  width: 100%;
+  font-size: 4vw;
+  margin-bottom: 12px;
+}
+
+.one-ill .ill-info a {
+  color: black;
+  text-decoration: none;
+}
+
+.one-ill .ill-info a div {
+  display: flex;
+}
+
+.one-ill .ill-info p {
+  margin: 2px 0;
+}
+
+.ill-name {
+  font-weight: bold;
+  align-items: center;
+  width: 33%;
+  justify-content: flex-start;
+}
+
+.ill-description {
+  width: 70%;
+  align-items: flex-start;
+}
+
+.one-ill .ill-info .ill-name,
+.one-ill .ill-info .ill-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.tracking {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+}

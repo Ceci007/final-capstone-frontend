@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<header>
+  <div
+    className="title"
+  >
+    <h4>
+      Track.it
+    </h4>
+  </div>
+</header>
+`;
+
+exports[`Header renders correctly 1`] = `
+<header>
+  <div
+    className="title"
+  >
+    <h4>
+      Track.it
+    </h4>
+  </div>
+</header>
+`;

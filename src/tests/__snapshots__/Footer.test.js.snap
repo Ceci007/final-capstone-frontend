@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<nav
+  className="menu"
+>
+  <a
+    href="/main"
+    onClick={[Function]}
+  >
+    <div
+      className="icons"
+    >
+      <i
+        className="fa fa-bar-chart"
+      />
+      <p>
+        Illnesses
+      </p>
+    </div>
+  </a>
+  <a
+    href="/login"
+    onClick={[Function]}
+  >
+    <div
+      className="icons"
+    >
+      <i
+        className="fa fa-sign-in"
+      />
+      <p>
+        Log In
+      </p>
+    </div>
+  </a>
+  <a
+    href="/signup"
+    onClick={[Function]}
+  >
+    <div
+      className="icons"
+    >
+      <i
+        className="fa fa-user-circle"
+      />
+      <p>
+        Sign Up
+      </p>
+    </div>
+  </a>
+</nav>
+`;

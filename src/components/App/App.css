@@ -1,0 +1,33 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.login-access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-access p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: relative;
+  top: 15vh;
+}
+
+.login-access img {
+  width: 125px;
+  position: relative;
+  top: 15vh;
+}
+
+.route-trackings {
+  overflow-y: scroll;
+  padding-bottom: 10vh;
+}

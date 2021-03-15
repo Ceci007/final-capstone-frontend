@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<a
+  href="/undefined"
+  onClick={[Function]}
+>
+  <div
+    className="icons"
+  >
+    <i
+      className="fa "
+    />
+    <p>
+      
+    </p>
+  </div>
+</a>
+`;
+
+exports[`PathComponent renders correctly 1`] = `
+<a
+  href="/undefined"
+  onClick={[Function]}
+>
+  <div
+    className="icons"
+  >
+    <i
+      className="fa "
+    />
+    <p>
+      
+    </p>
+  </div>
+</a>
+`;

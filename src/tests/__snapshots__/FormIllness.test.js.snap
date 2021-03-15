@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div>
+  <h3>
+    
+     
+    Illness
+  </h3>
+  <form
+    className="one-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="one-parameter"
+    >
+      <label
+        htmlFor="name"
+      >
+        Name:
+        <input
+          defaultValue=""
+          id="name"
+          name="name"
+          onChange={[Function]}
+          required={true}
+          type="text"
+        />
+      </label>
+    </div>
+    <div
+      className="one-parameter"
+    >
+      <label
+        htmlFor="description"
+      >
+        Description:
+        <textarea
+          defaultValue=""
+          id="description"
+          name="description"
+          onChange={[Function]}
+        />
+      </label>
+    </div>
+    <div
+      className="buttons-form"
+    />
+  </form>
+</div>
+`;
+
+exports[`FormIllness renders correctly 1`] = `
+<div>
+  <h3>
+    
+     
+    Illness
+  </h3>
+  <form
+    className="one-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="one-parameter"
+    >
+      <label
+        htmlFor="name"
+      >
+        Name:
+        <input
+          defaultValue=""
+          id="name"
+          name="name"
+          onChange={[Function]}
+          required={true}
+          type="text"
+        />
+      </label>
+    </div>
+    <div
+      className="one-parameter"
+    >
+      <label
+        htmlFor="description"
+      >
+        Description:
+        <textarea
+          defaultValue=""
+          id="description"
+          name="description"
+          onChange={[Function]}
+        />
+      </label>
+    </div>
+    <div
+      className="buttons-form"
+    />
+  </form>
+</div>
+`;
