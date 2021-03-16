@@ -16,7 +16,8 @@
 
 The objective of this project was to create a tracking App in which a user is presented with a list of things to be measured. In this health care app we track the information from an api consumed with react and redux.
 
-Live demo of the project: [Live Demo](https://vigorous-pike-400a13.netlify.app/)
+### Live Demo link
+[Live Demo](https://vigorous-pike-400a13.netlify.app/)
 
 ![Traking Screenshot](./track.it_screenshot.png)
 
